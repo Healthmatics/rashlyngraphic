@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashlyn Graphics & ICT Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #FEFD03;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: #1556CE;
+            color: #FEFD03;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: #FEFD03;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FEFD03;
+            border-bottom: 2px solid #FEFD03;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #1556CE;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: #1556CE;
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 1rem 0;
+            }
+
+            .dropdown-content {
+                position: static;
+                background: #1556CE;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+           <div class="logo">
+  <img src="images/log.png" alt="Rashlyn Graphics Logo" style="height:40px; vertical-align:middle; margin-right:8px;">
+  <span>Rashlyn Graphics</span>
+</div>
+
+            <ul class="nav-links">
+                
+            </ul>
+            <div class="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashlyn Graphics & ICT Solutions - Hero Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFFF;
+            overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .cta-button {
+            background: #1556CE;
+            color: #FFFFFF;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #1556CE;
+            transform: scale(1.05);
+        }
+
+        .floating-icons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .floating-icon {
+            position: absolute;
+            opacity: 0.3;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .floating-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 0.2; }
+            50% { opacity: 0.4; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Think it, I Design it – Professional Websites, Graphics & ICT Training</h1>
+            <p>Transforming your ideas into stunning websites, eye-catching graphics, and expert ICT training with a passion for creativity and innovation.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button">Get a Quote</a>
+                <a href="#portfolio" class="cta-button">View My Work</a>
+            </div>
+        </div>
+        <div class="floating-icons">
+            <div class="floating-icon" style="left: 10%; animation-delay: 0s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+            </div>
+            <div class="floating-icon" style="left: 30%; animation-delay: 2s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" alt="Illustrator Icon">
+            </div>
+            <div class="floating-icon" style="left: 50%; animation-delay: 4s;">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/pen.png" alt="Pen Tool Icon">
+            </div>
+            <div class="floating-icon" style="left: 70%; animation-delay: 6s;">
+                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
+            </div>
+            <div class="floating-icon" style="left: 90%; animation-delay: 8s;">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FFFFFF 70%, #C8102E10 100%);
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+            background: #FFFFFF;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .about-content h2 {
+            color: #1556CE;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: #1556CE;
+            transition: width 0.3s ease;
+        }
+
+        .about-content h2:hover::after {
+            width: 100%;
+        }
+
+        .about-content h3 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #333;
+            opacity: 0;
+            animation: fadeInText 1.2s ease-in-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        .about-content ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .about-content ul li {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .about-content ul li:hover {
+            transform: translateX(10px);
+            color: #1556CE;
+        }
+
+        .about-content ul li::before {
+            content: '✔';
+            color: #1556CE;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .graphic-effects {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .graphic-icon {
+            position: absolute;
+            opacity: 0.2;
+            animation: float 12s infinite ease-in-out;
+        }
+
+        .graphic-icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
+            50% { opacity: 0.3; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .about-content {
+                padding: 1.5rem;
+            }
+
+            .about-content h2 {
+                font-size: 2.2rem;
+            }
+
+            .about-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+            }
+
+            .about-image img {
+                max-width: 90%;
+            }
+
+            .about-content h2::after {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>At Rashlyn Graphics & ICT Solutions, we turn visions into reality. Founded with a passion for creativity and technology, our mission is to deliver exceptional website design, graphic design, branding, and ICT training tailored to your needs. What sets us apart is our commitment to personalized service, innovative designs, and empowering our clients through education. With years of experience, we blend artistry with technical expertise to create solutions that stand out.</p>
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>Customized designs that reflect your unique brand identity.</li>
+                <li>Expertise in both creative and technical fields for a holistic approach.</li>
+                <li>Personalized ICT training to empower you and your team.</li>
+                <li>Dedicated support and transparent communication throughout your project.</li>
+                <li>Proven track record of delivering high-quality, impactful results.</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="images/2.jpg" alt="Workspace">
+        </div>
+        <div class="graphic-effects">
+            <div class="graphic-icon" style="left: 10%; bottom: 10%; animation-delay: 0s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+            </div>
+            <div class="graphic-icon" style="left: 20%; bottom: 20%; animation-delay: 2s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" alt="Illustrator Icon">
+            </div>
+            <div class="graphic-icon" style="right: 15%; bottom: 15%; animation-delay: 4s;">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            </div>
+        </div>
+    </section>
+
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .services-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-section h2 {
+            text-align: center;
+            color: #1556CE;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .services-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #1556CE;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .service-card {
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .service-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #1556CE;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 1rem;
+        }
+
+        .service-card ul li {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-card ul li::before {
+            content: '→';
+            color: #1556CE;
+            position: absolute;
+            left: 0;
+        }
+
+        /* WhatsApp Button */
+        .order-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #1556CE;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background: #1556CE;
+        }
+
+        .graphic-effects {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .graphic-icon {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .graphic-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
+            50% { opacity: 0.25; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .services-section {
+                padding: 2rem 1rem;
+            }
+
+            .services-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .service-card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <img src="images/logo.png" alt="Logo Design Icon">
+                <h3>Logo Design</h3>
+                <p>Unique and professional logos for your brand.</p>
+                <ul>
+                    <li>Starting at ₵150</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Logo%20Design.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <img src="images/flyer.png" alt="Flyer Design Icon">
+                <h3>Flyer & Poster Design</h3>
+                <p>Eye-catching designs to promote your business.</p>
+                <ul>
+                    <li>₵100 – ₵200 per design</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Flyer%20and%20Poster%20Design.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <img src="images/business.png" alt="Business Cards Icon">
+                <h3>Business Cards & Letterheads</h3>
+                <p>Professional identity materials for your business.</p>
+                <ul>
+                    <li>Business Cards: ₵120</li>
+                    <li>Letterheads: ₵150</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Business%20Cards%20and%20Letterheads.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <img src="images/brochure.png" alt="Brochure Design Icon">
+                <h3>Brochures & Catalogs</h3>
+                <p>Creative layouts to showcase products & services.</p>
+                <ul>
+                    <li>₵250 – ₵500</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Brochures%20and%20Catalogs.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <img src="images/banner.png" alt="Banner Icon">
+                <h3>Signboards & Banners</h3>
+                <p>Large format designs for events and branding.</p>
+                <ul>
+                    <li>₵300 – ₵800</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Signboards%20and%20Banners.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <img src="images/book.png" alt="Book Cover Icon">
+                <h3>Book Covers & Certificates</h3>
+                <p>Elegant covers and certificates tailored for you.</p>
+                <ul>
+                    <li>₵200 – ₵400</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Book%20Covers%20and%20Certificates.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="service-card">
+                <img src="images/sticker.png" alt="Stickers Icon">
+                <h3>Labels, Stickers & Packaging Design</h3>
+                <p>Attractive branding for your products.</p>
+                <ul>
+                    <li>₵150 – ₵350</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Labels,%20Stickers%20and%20Packaging%20Design.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="service-card">
+                <img src="images/social.png" alt="Social Media Icon">
+                <h3>Social Media Graphics</h3>
+                <p>Boost engagement with custom social posts.</p>
+                <ul>
+                    <li>₵80 – ₵200 per design</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Social%20Media%20Graphics.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Websites Section -->
+            <div class="service-card">
+                <img src="images/corporate.png" alt="Corporate Website Icon">
+                <h3>Business & Corporate Websites</h3>
+                <p>Responsive websites tailored for companies.</p>
+                <ul>
+                    <li>₵2,500 – ₵5,000</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Business%20and%20Corporate%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/school.png" alt="School Website Icon">
+                <h3>School Websites</h3>
+                <p>Interactive portals for schools and institutions.</p>
+                <ul>
+                    <li>₵2,000 – ₵3,500</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20School%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/ecommerce.png" alt="E-commerce Website Icon">
+                <h3>E-commerce Websites</h3>
+                <p>Online stores with secure payment integration.</p>
+                <ul>
+                    <li>₵3,500 – ₵7,000</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20E-commerce%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/portfolio.png" alt="Portfolio Website Icon">
+                <h3>Portfolio & Personal Websites</h3>
+                <p>Showcase your work or personal brand online.</p>
+                <ul>
+                    <li>₵1,500 – ₵3,000</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Portfolio%20and%20Personal%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/ngo.png" alt="NGO Website Icon">
+                <h3>NGO & Religious Websites</h3>
+                <p>Professional sites for NGOs & religious groups.</p>
+                <ul>
+                    <li>₵2,000 – ₵4,000</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20NGO%20and%20Religious%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/blog.png" alt="Blog Website Icon">
+                <h3>Blog & News Websites</h3>
+                <p>Dynamic sites for content creators & news outlets.</p>
+                <ul>
+                    <li>₵1,800 – ₵3,500</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Blog%20and%20News%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/redesign.png" alt="Website Redesign Icon">
+                <h3>Website Redesign & Maintenance</h3>
+                <p>Revamp old sites & keep them updated.</p>
+                <ul>
+                    <li>₵1,000 – ₵2,500</li>
+                </ul>
+                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Website%20Redesign%20and%20Maintenance.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+            </div>
+
+        </div>
+
+        <div class="graphic-effects">
+            <div class="graphic-icon" style="left: 5%; bottom: 10%; animation-delay: 0s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+            </div>
+            <div class="graphic-icon" style="right: 10%; bottom: 20%; animation-delay: 2s;">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            </div>
+            <div class="graphic-icon" style="left: 15%; bottom: 30%; animation-delay: 4s;">
+                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .portfolio-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-section h2 {
+            text-align: center;
+            color: #1556CE;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .portfolio-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #1556CE;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1556CE(200, 16, 46, 0.7);
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item .overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-item .overlay p {
+            font-size: 1rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #FFFFFF;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            padding: 2rem;
+            position: relative;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content h3 {
+            color: #1556CE;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content p {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5rem;
+            color: #1556CE;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .portfolio-section {
+                padding: 2rem 1rem;
+            }
+
+            .portfolio-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .portfolio-item img {
+                height: 180px;
+            }
+
+            .modal-content {
+                padding: 1.5rem;
+            }
+
+            .modal-content h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <section class="portfolio-section">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="Websites" data-title="School Website" data-description="A responsive school website with modern design and user-friendly navigation.">
+                <img src="images/sch.jfif" alt="School Website">
+                <div class="overlay">
+                    <h3>School Website</h3>
+                    <p>Websites</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="Graphics" data-title="Event Flyer" data-description="Vibrant event flyer designed to attract attention and convey key information.">
+                <img src="images/eve.jfif" alt="Event Flyer">
+                <div class="overlay">
+                    <h3>Event Flyer</h3>
+                    <p>Graphics</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="Branding" data-title="Brand Identity" data-description="Complete brand identity package with logo, typography, and stationery design.">
+                <img src="images/bra.jfif" alt="Brand Identity">
+                <div class="overlay">
+                    <h3>Brand Identity</h3>
+                    <p>Branding</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="Websites" data-title="E-commerce Platform" data-description="A fully functional e-commerce website optimized for sales and user experience.">
+                <img src="images/ecom.jfif" alt="E-commerce Platform">
+                <div class="overlay">
+                    <h3>E-commerce Platform</h3>
+                    <p>Websites</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="Graphics" data-title="Logo Design" data-description="A unique logo crafted to reflect the brand's identity and values.">
+                <img src="images/log.png" alt="Logo Design">
+                <div class="overlay">
+                    <h3>Logo Design</h3>
+                    <p>Graphics</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="Branding" data-title="Stationery Design" data-description="Elegant stationery design to enhance brand professionalism.">
+                <img src="images/stat.jfif" alt="Stationery Design">
+                <div class="overlay">
+                    <h3>Stationery Design</h3>
+                    <p>Branding</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="portfolioModal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img id="modalImage" src="" alt="Portfolio Item">
+                <h3 id="modalTitle"></h3>
+                <p id="modalCategory"></p>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const modal = document.getElementById('portfolioModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCategory = document.getElementById('modalCategory');
+        const modalDescription = document.getElementById('modalDescription');
+        const closeButton = document.querySelector('.close-button');
+
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                modalImage.src = item.querySelector('img').src;
+                modalTitle.textContent = item.dataset.title;
+                modalCategory.textContent = `Category: ${item.dataset.category}`;
+                modalDescription.textContent = item.dataset.description;
+                modal.style.display = 'flex';
+            });
+        });
+
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .packages-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .packages-section h2 {
+            text-align: center;
+            color: #1556CE;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .packages-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #1556CE;
+        }
+
+        .packages-section p.note {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 2rem;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .package-card {
+            background: #FFFFFF;
+            border: 2px solid #1556CE;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .package-card h3 {
+            color: #1556CE;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .package-card .price {
+            font-size: 2rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .package-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .package-card ul li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .package-card ul li::before {
+            content: '✔';
+            color: #1556CE;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .package-card .cta-button {
+            display: inline-block;
+            background: #1556CE;
+            color: #FFFFFF;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .package-card .cta-button:hover {
+            background: #1556CE;
+            transform: scale(1.05);
+        }
+
+        .graphic-effects {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .graphic-icon {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .graphic-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
+            50% { opacity: 0.25; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .packages-section {
+                padding: 2rem 1rem;
+            }
+
+            .packages-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .package-card {
+                padding: 1.5rem;
+            }
+
+            .package-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .package-card .price {
+                font-size: 1.8rem;
+            }
+
+            .package-card ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .testimonials-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-section h2 {
+            text-align: center;
+            color: #1556CE;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .testimonials-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #1556CE;
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial {
+            flex: 0 0 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: fadeInSlide 0.5s ease-in-out;
+            min-height: 300px;
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #1556CE;
+        }
+
+        .testimonial p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            max-width: 600px;
+        }
+
+        .testimonial h4 {
+            font-size: 1.2rem;
+            color: #1556CE;
+            font-weight: bold;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background: #1556CE;
+            color: #FFFFFF;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-button:hover {
+            background: #1556CE;
+        }
+
+        .carousel-dots {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .dot.active {
+            background: #1556CE;
+        }
+
+        .graphic-effects {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .graphic-icon {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .graphic-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
+            50% { opacity: 0.25; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInSlide {
+            0% { opacity: 0; transform: translateX(20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .testimonials-section {
+                padding: 2rem 1rem;
+            }
+
+            .testimonials-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .testimonial {
+                padding: 1.5rem;
+            }
+
+            .testimonial p {
+                font-size: 1rem;
+            }
+
+            .testimonial img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .carousel-button {
+                padding: 0.4rem 0.8rem;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+   
+    <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+        const testimonials = document.querySelectorAll('.testimonial');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            updateCarousel();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            updateCarousel();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            updateCarousel();
+        }, 5000);
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            color: #1556CE;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .contact-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #1556CE;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .contact-form, .contact-info {
+            padding: 2rem;
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .contact-form h3, .contact-info h3 {
+            color: #1556CE;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form input, .contact-form select, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #1556CE;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+            border-color: #1556CE;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            background: #1556CE;
+            color: #FFFFFF;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #1556CE;
+            transform: scale(1.05);
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info a {
+            color: #1556CE;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #1556CE;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .graphic-effects {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .graphic-icon {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .graphic-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
+            50% { opacity: 0.25; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-section {
+                padding: 2rem 1rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .contact-form, .contact-info {
+                padding: 1.5rem;
+            }
+
+            .contact-form h3, .contact-info h3 {
+                font-size: 1.5rem;
+            }
+
+            .map-container iframe {
+                height: 250px;
+            }
+        }
+    </style>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="website-design">Website Design</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="branding">Branding</option>
+                        <option value="ict-tuition">ICT Home Tuition</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><strong>Phone:</strong> <a href="tel:+233123456789">+233547642937</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@rashlyngraphics.com">seidu99245@gmail.com</a></p>
+                <p><strong>Address:</strong> Ritz Junction Madina, Ghana</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.997423291849!2d-0.200103685231494!3d5.603716796021881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzYnMTMuNCJOIDDCsDEyJzAwLjQiVw!5e0!3m2!1sen!2sgh!4v1634567890123" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="graphic-effects">
+            <div class="graphic-icon" style="left: 5%; bottom: 10%; animation-delay: 0s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+            </div>
+            <div class="graphic-icon" style="right: 10%; bottom: 20%; animation-delay: 2s;">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            </div>
+            <div class="graphic-icon" style="left: 15%; bottom: 30%; animation-delay: 4s;">
+                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
+            </div>
+        </div>
+    </section>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1556CE;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-button img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+
+     <a href="https://wa.me/+233547642937?text=Hello%20Rashlyn%20Graphics,%20how%20much%20do%20you%20charge%20for%20a%20service?" target="_blank" class="whatsapp-button">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon">
+    </a>
+
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-section {
+            background: #1556CE;
+            color: #FFFFFF;
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-column {
+            padding: 1rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+        }
+
+        .footer-column p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-column ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #FFFFFF;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #f0f0f0;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer-bottom {
+            background: #1556CE;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.9rem;
+            color: #FFFFFF;
+        }
+
+        .graphic-effects {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .graphic-icon {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .graphic-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
+            50% { opacity: 0.25; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer-section {
+                padding: 2rem 1rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-column h3 {
+                font-size: 1.3rem;
+            }
+
+            .footer-column p, .footer-column ul li a {
+                font-size: 0.9rem;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .footer-logo {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+     <footer class="footer-section">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <div class="footer-logo">Rashlyn Graphics</div>
+                <p>Rashlyn Graphics & ICT Solutions provides top-tier website design, graphic design, branding, and ICT training. We turn your vision into reality with creativity and expertise.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#website-design">Website Design</a></li>
+                    <li><a href="#graphic-design">Graphic Design</a></li>
+                    <li><a href="#branding">Branding</a></li>
+                    <li><a href="#ict-tuition">ICT Home Tuition</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p>Phone: <a href="tel:+233123456789">+233547642937</a></p>
+                <p>Email: <a href="mailto:info@rashlyngraphics.com">seidu99245@gmail.com</a></p>
+                <p>Address: 123 Creative Avenue, Accra, Ghana</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="graphic-effects">
+            <div class="graphic-icon" style="left: 5%; bottom: 10%; animation-delay: 0s;">
+                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+            </div>
+            <div class="graphic-icon" style="right: 10%; bottom: 20%; animation-delay: 2s;">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            </div>
+            <div class="graphic-icon" style="left: 15%; bottom: 30%; animation-delay: 4s;">
+                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rashlyn Graphics & ICT Solutions. All rights reserved. Designed & Developed By rashlyngraphics</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
