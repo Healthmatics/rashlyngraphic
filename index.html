@@ -1742,12 +1742,25 @@
         <h2>Contact Us</h2>
         <div class="contact-grid">
             <div class="contact-form">
-                <h3>Get in Touch</h3>
+                <h3>Enquiry Form</h3>
+
 <form action="https://formsubmit.co/rashlyngraphics@gmail.com" method="POST">
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <button type="submit">Send</button>
+    <!-- Client's Name -->
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <!-- Client's Email -->
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <!-- Client's Contact (Phone Number) -->
+    <input type="tel" name="contact" placeholder="Your Contact Number" required>
+
+    <!-- Client's Message -->
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Send</button>
 </form>
+
             </div>
             <div class="contact-info">
                 <h3>Contact Details</h3>
