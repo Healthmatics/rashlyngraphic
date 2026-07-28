@@ -3,2134 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashlyn Graphics & ICT Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: #FEFD03;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .navbar {
-            background: #1556CE;
-            color: #FEFD03;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 2rem;
-            position: relative;
-        }
-
-        .nav-links a {
-            color: #FEFD03;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #FEFD03;
-            border-bottom: 2px solid #FEFD03;
-        }
-
-        .dropdown {
-            position: rel1ative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background: #1556CE;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-            top: 100%;
-            left: 0;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 12px 16px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .hamburger {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                width: 100%;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                background: #1556CE;
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                margin: 1rem 0;
-            }
-
-            .dropdown-content {
-                position: static;
-                background: #1556CE;
-            }
-        }
-    </style>
+    <title>Graphic Design, Website Design & School Management Solutions in Ghana | Rashlyn Graphics</title>
+    <meta name="description" content="Rashlyn Graphics & ICT Solutions - Professional graphic design, website design, logo design, branding, e-commerce website development, school management systems, school visibility solutions, and ICT training in Accra, Ghana.">
+    <meta name="keywords" content="graphic design Ghana, website design Accra, logo design Ghana, web development Ghana, e-commerce website Ghana, flyer design, business card design, brochure design, social media design, brand identity, school management system Ghana, school website design, school management software Ghana, school portal design, school visibility solutions, school branding Ghana, school marketing Ghana, school online presence, school logo design, school admissions website, school information management system, school digital presence, school management solutions, hotel website, church website, SEO services Ghana, ICT training Ghana, digital marketing Ghana, responsive web design, affordable website Ghana, signage design, banner design, T-shirt design, wedding invitation, book cover design, packaging design, vehicle branding, corporate website, restaurant website, hospital website, real estate website, mobile app design, school website Ghana, school management app, school fees system, school result checker, school communication platform, school parent portal, school student portal, LMS Ghana, learning management system, e-learning platform Ghana">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rashlyn Graphics & ICT Solutions">
+    <meta property="og:title" content="Graphic Design, Website Design & School Management Solutions in Ghana | Rashlyn Graphics">
+    <meta property="og:description" content="Professional graphic design, website design, school management systems, school visibility solutions, logo design, branding, and ICT training in Accra, Ghana.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rashlyngraphics.com">
+    <meta property="og:image" content="https://rashlyngraphics.com/images/logo.png">
+    <meta property="og:locale" content="en_GH">
+    <meta property="og:site_name" content="Rashlyn Graphics">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Graphic Design, Website Design & School Management Solutions in Ghana | Rashlyn Graphics">
+    <meta name="twitter:description" content="Professional graphic design, website design, school management systems, school visibility solutions, logo design, branding, and ICT training in Accra, Ghana.">
+    <meta name="twitter:image" content="https://rashlyngraphics.com/images/logo.png">
+    <link rel="canonical" href="https://rashlyngraphics.com">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0079FF">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Rashlyn Graphics & ICT Solutions",
+      "description": "Professional graphic design, website design, school management solutions, branding, and ICT training in Accra, Ghana.",
+      "url": "https://rashlyngraphics.com",
+      "logo": "https://rashlyngraphics.com/images/logo.png",
+      "image": "https://rashlyngraphics.com/images/logo.png",
+      "telephone": "+233547642937",
+      "email": "rashlyngraphics@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ritz Junction Madina",
+        "addressLocality": "Accra",
+        "addressCountry": "GH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "5.6508",
+        "longitude": "-0.1860"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Ghana"
+      },
+      "serviceType": ["Graphic Design", "Website Design", "School Management Systems", "ICT Training", "Branding", "Logo Design"],
+      "priceRange": "GH₵100 - GH₵15000",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "sameAs": [],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "50"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rashlyngraphics.com/index.html"
+      }]
+    }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-           <div class="logo">
-  <img src="images/log.png" alt="Rashlyn Graphics Logo" style="height:40px; vertical-align:middle; margin-right:8px;">
-  <span>Rashlyn Graphics</span>
-</div>
 
-            <ul class="nav-links">
-                
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Rashlyn Graphics" class="logo-img"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-btn">Quote</a></li>
             </ul>
-            <div class="hamburger">☰</div>
+            <div class="nav-actions">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashlyn Graphics & ICT Solutions - Hero Section</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .hero-section {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #FFFFFF;
-            overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/1.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            padding: 2rem;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-        }
-
-        .cta-button {
-            background: #1556CE;
-            color: #FFFFFF;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: #1556CE;
-            transform: scale(1.05);
-        }
-
-        .floating-icons {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
-
-        .floating-icon {
-            position: absolute;
-            opacity: 0.3;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .floating-icon img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100vh); opacity: 0.2; }
-            50% { opacity: 0.4; }
-            100% { transform: translateY(-100vh); opacity: 0; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .hero-content p {
-                font-size: 1rem;
-            }
-
-            .cta-button {
-                padding: 0.6rem 1.2rem;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Think it, I Design it – Professional Websites, Graphics & ICT Training</h1>
-            <p>Transforming your ideas into stunning websites, eye-catching graphics, and expert ICT training with a passion for creativity and innovation.</p>
-            
+    <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-img" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80')"></div>
+            <div class="hero-bg-img-overlay"></div>
         </div>
-        <div class="floating-icons">
-            <div class="floating-icon" style="left: 10%; animation-delay: 0s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
-            </div>
-            <div class="floating-icon" style="left: 30%; animation-delay: 2s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" alt="Illustrator Icon">
-            </div>
-            <div class="floating-icon" style="left: 50%; animation-delay: 4s;">
-                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/pen.png" alt="Pen Tool Icon">
-            </div>
-            <div class="floating-icon" style="left: 70%; animation-delay: 6s;">
-                <img src="https://img.icons8.com/?size=100&id=Hs4y0qsqaZ6G&format=png&color=000000" alt="Color Palette Icon">
-            </div>
-            <div class="floating-icon" style="left: 90%; animation-delay: 8s;">
-                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+        <div class="container hero-content">
+            <p class="hero-tag fade-in">Graphic Design & Website Design in Ghana</p>
+            <h1 class="hero-title fade-in">Professional <span class="accent-text">Graphic Design</span> & Website Development</h1>
+            <p class="hero-subtitle fade-in">Rashlyn Graphics & ICT Solutions is a leading graphic design and web development company in Accra, Ghana. We deliver affordable logo design, flyer design, business card design, responsive website design, e-commerce website development, brand identity design, school management systems, school visibility solutions, and ICT training for businesses, schools, hotels, churches, and organizations across Ghana.</p>
+            <div class="hero-buttons fade-in">
+                <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
+                <a href="contact.html" class="btn btn-outline">Get a Free Quote</a>
             </div>
         </div>
     </section>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .about-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 3rem 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #FFFFFF 70%, #C8102E10 100%);
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-        }
-
-        .about-content {
-            flex: 1;
-            min-width: 300px;
-            padding: 2rem;
-            background: #FFFFFF;
-            border-radius: 10px;
-            position: relative;
-            z-index: 1;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .about-content h2 {
-            color: #1556CE;
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .about-content h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 60%;
-            height: 4px;
-            background: #1556CE;
-            transition: width 0.3s ease;
-        }
-
-        .about-content h2:hover::after {
-            width: 100%;
-        }
-
-        .about-content h3 {
-            color: #333;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-            color: #333;
-            opacity: 0;
-            animation: fadeInText 1.2s ease-in-out forwards;
-            animation-delay: 0.3s;
-        }
-
-        .about-content ul {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .about-content ul li {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-left: 2rem;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-
-        .about-content ul li:hover {
-            transform: translateX(10px);
-            color: #1556CE;
-        }
-
-        .about-content ul li::before {
-            content: '✔';
-            color: #1556CE;
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .about-image {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-            position: relative;
-        }
-
-        .about-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: slideIn 1s ease-in-out;
-        }
-
-        .about-image img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-
-        .graphic-effects {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .graphic-icon {
-            position: absolute;
-            opacity: 0.2;
-            animation: float 12s infinite ease-in-out;
-        }
-
-        .graphic-icon img {
-            width: 50px;
-            height: 50px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
-            50% { opacity: 0.3; }
-            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInText {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .about-section {
-                flex-direction: column;
-                text-align: center;
-                padding: 2rem 1rem;
-            }
-
-            .about-content {
-                padding: 1.5rem;
-            }
-
-            .about-content h2 {
-                font-size: 2.2rem;
-            }
-
-            .about-content h3 {
-                font-size: 1.5rem;
-            }
-
-            .about-content p {
-                font-size: 1rem;
-            }
-
-            .about-image img {
-                max-width: 90%;
-            }
-
-            .about-content h2::after {
-                width: 100%;
-            }
-        }
-    </style>
-
-    <section class="about-section">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>At Rashlyn Graphics, we turn visions into reality. Founded with a passion for creativity and technology, our mission is to deliver exceptional website design, graphic design, branding, and ICT training tailored to your needs. What sets us apart is our commitment to personalized service, innovative designs, and empowering our clients through education. With years of experience, we blend artistry with technical expertise to create solutions that stand out.</p>
-            <h3>Why Choose Us?</h3>
-            <ul>
-                <li>Customized designs that reflect your unique brand identity.</li>
-                <li>Expertise in both creative and technical fields for a holistic approach.</li>
-                <li>Personalized ICT trainings to empower you and your team.</li>
-                <li>Dedicated support and transparent communication throughout your project.</li>
-                <li>Proven track record of delivering high-quality and impactful results.</li>
-            </ul>
-        </div>
-        <div class="about-image">
-            <img src="images/2.jpg" alt="Workspace">
-        </div>
-        <div class="graphic-effects">
-            <div class="graphic-icon" style="left: 10%; bottom: 10%; animation-delay: 0s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+    <!-- Overview: What We Do -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">What We Do</p>
+                <h2 class="section-title">Creative & Digital <span class="accent-text">Solutions</span></h2>
+                <p class="section-subtitle">From graphic design to web development and school management, we are your one-stop creative and technology partner in Ghana.</p>
             </div>
-            <div class="graphic-icon" style="left: 20%; bottom: 20%; animation-delay: 2s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" alt="Illustrator Icon">
-            </div>
-            <div class="graphic-icon" style="right: 15%; bottom: 15%; animation-delay: 4s;">
-                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            <div class="overview-grid">
+                <div class="overview-card fade-in">
+                    <div class="overview-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Logo design, flyer design, business card design, brochure design, banner design, signage, social media graphics, and brand identity design in Ghana.</p>
+                    <a href="services.html" class="service-order-link">Learn More</a>
+                </div>
+                <div class="overview-card fade-in">
+                    <div class="overview-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3>Website Design</h3>
+                    <p>Responsive website design, e-commerce websites, school websites, hotel websites, church websites, corporate websites, and website redesign in Accra.</p>
+                    <a href="services.html" class="service-order-link">Learn More</a>
+                </div>
+                <div class="overview-card fade-in">
+                    <div class="overview-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3>School Solutions</h3>
+                    <p>School management systems, school website design, school portals, student and parent portals, school visibility solutions, and school branding in Ghana.</p>
+                    <a href="services.html" class="service-order-link">Learn More</a>
+                </div>
+                <div class="overview-card fade-in">
+                    <div class="overview-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <h3>ICT Training</h3>
+                    <p>Microsoft Office training, graphic design training, web design courses, social media marketing training, and computer literacy in Ghana.</p>
+                    <a href="services.html" class="service-order-link">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
 
-  <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .services-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 3rem 2rem;
-            background: #FFFFFF;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .services-section h2 {
-            text-align: center;
-            color: #1556CE;
-            font-size: 2.8rem;
-            margin-bottom: 3rem;
-            position: relative;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .services-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: #1556CE;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 1rem;
-        }
-
-        .service-card {
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        .service-card img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 1rem;
-        }
-
-        .service-card h3 {
-            color: #1556CE;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .service-card p {
-            font-size: 1rem;
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 0.5rem;
-        }
-
-        .service-card ul {
-            list-style: none;
-            text-align: left;
-            margin-top: 1rem;
-        }
-
-        .service-card ul li {
-            font-size: 0.9rem;
-            color: #333;
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .service-card ul li::before {
-            content: '→';
-            color: #1556CE;
-            position: absolute;
-            left: 0;
-        }
-
-        /* WhatsApp Button */
-        .order-btn {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.7rem 1.5rem;
-            background: #1556CE;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .order-btn:hover {
-            background: #1556CE;
-        }
-
-        .graphic-effects {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .graphic-icon {
-            position: absolute;
-            opacity: 0.15;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .graphic-icon img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
-            50% { opacity: 0.25; }
-            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .services-section {
-                padding: 2rem 1rem;
-            }
-
-            .services-section h2 {
-                font-size: 2.2rem;
-            }
-
-            .service-card {
-                padding: 1.5rem;
-            }
-
-            .service-card h3 {
-                font-size: 1.3rem;
-            }
-
-            .service-card p {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-
-    <section class="services-section">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-
-            <!-- Service 1 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/ee/d0/97/eed097dcdc71906cd731e5543a7109b0.jpg" alt="Logo Design Icon">
-                <h3>Logo Design</h3>
-                <p>Unique and professional logos for your brand.</p>
-                <ul>
-                    <li>Starting at ₵250</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Logo%20Design.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
+    <!-- Services Showcase -->
+    <section class="services" id="services-overview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Our Services</p>
+                <h2 class="section-title">Complete <span class="accent-text">Creative & Digital</span> Solutions</h2>
+                <p class="section-subtitle">From graphic design to web development and ICT training, we deliver end-to-end solutions for businesses, schools, and organizations across Ghana.</p>
             </div>
 
-            <!-- Service 2 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/e4/23/b6/e423b6e79cc64c332d75d90929cfc635.jpg" alt="Flyer Design Icon">
-                <h3>Flyer & Poster Design</h3>
-                <p>Eye-catching designs to promote your business.</p>
-                <ul>
-                    <li>₵150 – ₵300 per design (based on complexity of designs)</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Flyer%20and%20Poster%20Design.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/f6/25/01/f6250144cda7d2c5f0eff9943da77976.jpg" alt="Business Cards Icon">
-                <h3>Business Cards & Letterheads Designs</h3>
-                <p>Professional Branded identity materials for your business.</p>
-                <ul>
-                    <li>Business Cards: ₵150 per design</li>
-                    <li>Letterheads: ₵200 per design</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Business%20Cards%20and%20Letterheads.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/1200x/56/60/29/566029847483e413450a03e39a78f997.jpg" alt="Brochure Design Icon">
-                <h3>Brochures & Catalogs</h3>
-                <p>Creative layouts to showcase products & services.</p>
-                <ul>
-                    <li>₵250 – ₵500 (Based on complexity of design)</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Brochures%20and%20Catalogs.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/1200x/75/5b/1f/755b1fca17abb3d55ee8059b5d8e7f46.jpg" alt="Banner Icon">
-                <h3>Signboards & Banners</h3>
-                <p>Large format designs for events and branding.</p>
-                <ul>
-                    <li>₵200 – ₵800 (Based on complexity of design)</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Signboards%20and%20Banners.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/37/a9/91/37a9913e6b218e1eac89f4f57482cd9a.jpg" alt="Book Cover Icon">
-                <h3>Book Covers & Certificates</h3>
-                <p>Elegant covers and certificates tailored for you.</p>
-                <ul>
-                    <li>₵300 – ₵400 (Based on complexity of design)</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Book%20Covers%20and%20Certificates.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Service 7 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/34/fb/cc/34fbccaa8ea60539b127be2a62790d47.jpg" alt="Stickers Icon">
-                <h3>Labels, Stickers & Packaging Design</h3>
-                <p>Attractive branding for your products.</p>
-                <ul>
-                    <li>₵150 – ₵400 (Based on complexity of design)</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Labels,%20Stickers%20and%20Packaging%20Design.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Service 8 -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/1200x/5d/28/90/5d289055564c7f5b0ff3d55d438f1a24.jpg" alt="Social Media Icon">
-                <h3>Social Media Graphics</h3>
-                <p>Boost engagement with custom social posts.</p>
-                <ul>
-                    <li>₵100 – ₵300 per design (Based on complexity of design)</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Social%20Media%20Graphics.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <!-- Websites Section -->
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/ec/fa/db/ecfadb4bc9b8e9aa6bca7cc6fafbed64.jpg" alt="Corporate Website Icon">
-                <h3>Business & Corporate Websites</h3>
-                <p>Responsive websites tailored for companies.</p>
-                <ul>
-                    <li>₵2,500 – ₵5,000</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Business%20and%20Corporate%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/00/84/5b/00845b803a5c3c79be1190e2a3276f02.jpg" alt="School Website Icon">
-                <h3>School Websites</h3>
-                <p>Interactive portals for schools and institutions.</p>
-                <ul>
-                    <li>₵2,000 – ₵3,500</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20School%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <div class="service-card">
-                <img src="https://i.pinimg.com/1200x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg" alt="Blog Website Icon">
-                <h3>Blog & News Websites</h3>
-                <p>Dynamic sites for content creators & news outlets.</p>
-                <ul>
-                    <li>₵1,800 – ₵3,500</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Blog%20and%20News%20Websites.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-            <div class="service-card">
-                <img src="https://i.pinimg.com/736x/2b/d1/f4/2bd1f4cfc69c7cbdd7e438409eb97a8c.jpg" alt="Website Redesign Icon">
-                <h3>Website Redesign & Maintenance</h3>
-                <p>Revamp old sites & keep them updated.</p>
-                <ul>
-                    <li>₵1,000 – ₵2,500</li>
-                </ul>
-                <a href="https://wa.me/233547642937?text=Hello,%20I%20am%20interested%20in%20Website%20Redesign%20and%20Maintenance.%20Can%20you%20give%20me%20more%20details?" target="_blank" class="order-btn">Order Now</a>
-            </div>
-
-        </div>
-
-        <div class="graphic-effects">
-            <div class="graphic-icon" style="left: 5%; bottom: 10%; animation-delay: 0s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
-            </div>
-            <div class="graphic-icon" style="right: 10%; bottom: 20%; animation-delay: 2s;">
-                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
-            </div>
-            <div class="graphic-icon" style="left: 15%; bottom: 30%; animation-delay: 4s;">
-                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
-            </div>
-        </div>
-    </section>
-<section class="portfolio-section">
-    <h2>Select A Website Package</h2>
-    <div class="portfolio-grid">
-
-        <!-- Spark Plan -->
-        <div class="service-card">
-            <h3>Spark Plan</h3>
-            <p><strong>GH₵250</strong></p>
-            <p>For individuals or small startups just beginning their online presence. <br> (This Plan Renews Yearly)</p>
-            <ul>
-                <li>3-Pages</li>
-                <li>SSL Certificate</li>
-                <li>Mobile friendly Design</li>
-                <li>Secured</li>
-                <li>Gallery Section</li>
-                <li>Sitemap</li>
-                <li>Customer contact form</li>
-                <li>Support</li>
-                <li>Revisions - 1</li>
-                <li>5-day revision period</li>
-                <li>Website analytics</li>
-                <li>WhatsApp Chat Integration</li>
-                <li>Social Media integration</li>
-                <li>Google Map integration</li>
-               
-            </ul>
-            <a href="https://wa.me/233547642937?text=Hello,%20I%20want%20to%20order%20the%20Starter%20Plan" target="_blank" class="order-btn">Order Now</a>
-        </div>
-
-        <!-- Elevate Plan -->
-        <div class="service-card">
-            <h3>Elevate Plan</h3>
-            <p><strong>GH₵850</strong></p>
-            <p>For growing businesses that want a stronger digital footprint. <br> (This Plan Renews Yearly)</p>
-            <ul>
-                <li>7-Pages</li>
-                <li>SSL Certificate</li>
-                <li>Mobile friendly Design</li>
-                <li>Secured</li>
-                <li>Gallery Section</li>
-                <li>Sitemap</li>
-                <li>Customer contact form</li>
-                <li>Support</li>
-                <li>Revisions - 2</li>
-                <li>5-day revision period</li>
-                <li>Website analytics</li>
-                <li>WhatsApp Chat Integration</li>
-                <li>Social Media integration</li>
-                <li>Google Map integration</li>
-                <li>Speed Optimization</li>
-                <li>Newsletter SignUps</li>
-                <li>Free Domain Name</li>
-                <li>Free Business Email</li>
-                <li>SEO setup</li>
-            </ul>
-            <a href="https://wa.me/233547642937?text=Hello,%20I%20want%20to%20order%20the%20Launch%20Plan" target="_blank" class="order-btn">Order Now</a>
-        </div>
-
-        <!-- Momentum Plan -->
-        <div class="service-card">
-            <h3>Momentum Plan</h3>
-            <p><strong>GH₵1,800</strong></p>
-            <p>For established brands aiming to expand and add more features.<br> (This Plan Renews Yearly)</p>
-            <ul>
-                <li>12-Pages</li>
-                <li>SSL</li>
-                <li>Mobile friendly Designed</li>
-                <li>Secured</li>
-                <li>Gallery Section</li>
-                <li>Sitemap</li>
-                <li>Customer contact form</li>
-                <li>Support</li>
-                <li>Revisions - 3</li>
-                <li>10-day revision period</li>
-                <li>Website analytics</li>
-                <li>WhatsApp Chat Integration</li>
-                <li>Social Media integration</li>
-                <li>Google Map integration</li>
-                <li>Speed Optimization</li>
-                <li>Newsletter SignUps</li>
-                <li>Free Domain Name</li>
-                <li>Free Business Email</li>
-                <li>SEO setup</li>
-                <li>Live chat integration</li>
-                <li>Ecommerce</li>
-            </ul>
-            <a href="https://wa.me/233547642937?text=Hello,%20I%20want%20to%20order%20the%20Grow%20Plan" target="_blank" class="order-btn">Order Now</a>
-        </div>
-
-        <!-- Sell Plan -->
-        <div class="service-card">
-            <h3>Dominion Plan</h3>
-            <p><strong>GH₵2,500</strong></p>
-            <p>For large-scale businesses that need full functionality, including e-commerce and advanced tools.<br> (This Plan Renews Yearly)</p>
-            <ul>
-                <li>25-Pages</li>
-                <li>SSL Certificate</li>
-                <li>Mobile friendly</li>
-                <li>Secured</li>
-                <li>Gallery Section</li>
-                <li>Sitemap</li>
-                <li>Customer contact form</li>
-                <li>Support</li>
-                <li>Revisions - 2</li>
-                <li>7-day revision period</li>
-                <li>Website analytics</li>
-                <li>WhatsApp Chat Integration</li>
-                <li>Social Media integration</li>
-                <li>Google Map integration</li>
-                <li>Speed Optimization</li>
-                <li>Newsletter SignUps</li>
-                <li>Free Domain Name</li>
-                <li>Free Business Email</li>
-                <li>SEO setup</li>
-                <li>Online payments</li>
-                <li>Live chat integration</li>
-                <li>Ecommerce</li>
-            </ul>
-            <a href="https://wa.me/233547642937?text=Hello,%20I%20want%20to%20order%20the%20Sell%20Plan" target="_blank" class="order-btn">Order Now</a>
-        </div>
-
-    </div>
-</section>
-
-     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .portfolio-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 3rem 2rem;
-            background: #FFFFFF;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .portfolio-section h2 {
-            text-align: center;
-            color: #1556CE;
-            font-size: 2.8rem;
-            margin-bottom: 3rem;
-            position: relative;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .portfolio-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: #1556CE;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 1rem;
-        }
-
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .portfolio-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        .portfolio-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .portfolio-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .portfolio-item .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #1556CE(200, 16, 46, 0.7);
-            color: #FFFFFF;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .portfolio-item:hover .overlay {
-            opacity: 1;
-        }
-
-        .portfolio-item .overlay h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .portfolio-item .overlay p {
-            font-size: 1rem;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .modal-content {
-            background: #FFFFFF;
-            border-radius: 10px;
-            max-width: 800px;
-            width: 90%;
-            padding: 2rem;
-            position: relative;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        .modal-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-        }
-
-        .modal-content h3 {
-            color: #1556CE;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .modal-content p {
-            color: #333;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 1.5rem;
-            color: #1556CE;
-            cursor: pointer;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .portfolio-section {
-                padding: 2rem 1rem;
-            }
-
-            .portfolio-section h2 {
-                font-size: 2.2rem;
-            }
-
-            .portfolio-item img {
-                height: 180px;
-            }
-
-            .modal-content {
-                padding: 1.5rem;
-            }
-
-            .modal-content h3 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-
-    <section class="portfolio-section">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item" data-category="Websites" data-title="School Website" data-description="A responsive school website with modern design and user-friendly navigation.">
-                <img src="images/sch.jfif" alt="School Website">
-                <div class="overlay">
-                    <h3>School Website</h3>
-                    <p>Websites</p>
+            <!-- Graphic Design Services -->
+            <h4 class="services-subcategory fade-in">Graphic Design Services in Ghana</h4>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    </div>
+                    <h3 class="service-title">Logo Design Ghana</h3>
+                    <p class="service-description">Professional logo design for startups, businesses, and organizations. Unique brand marks that make your business memorable.</p>
+                    <p class="service-price">Starting at GH₵250</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                    </div>
+                    <h3 class="service-title">Flyer & Poster Design</h3>
+                    <p class="service-description">Eye-catching flyer and poster design for events, product promotions, church programs, and corporate events in Ghana.</p>
+                    <p class="service-price">GH₵150 – GH₵300</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                    </div>
+                    <h3 class="service-title">Business Card & Letterhead</h3>
+                    <p class="service-description">Professional business card design, letterhead design, envelope design, and corporate stationery design in Accra.</p>
+                    <p class="service-price">Cards: GH₵150 | Letterheads: GH₵200</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                    </div>
+                    <h3 class="service-title">Banner & Signage Design</h3>
+                    <p class="service-description">Large format banner design, roll-up banner design, signboard design, fascia board design, and outdoor signage design.</p>
+                    <p class="service-price">GH₵200 – GH₵800</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <h3 class="service-title">Brochure & Catalog Design</h3>
+                    <p class="service-description">Professional brochure design, product catalog design, magazine layout, and annual report design for companies.</p>
+                    <p class="service-price">GH₵250 – GH₵1,200</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <h3 class="service-title">Social Media Graphics</h3>
+                    <p class="service-description">Social media post design, Facebook cover design, Instagram graphics, and digital marketing graphics in Ghana.</p>
+                    <p class="service-price">GH₵100 – GH₵300</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3 class="service-title">Invitation & Event Design</h3>
+                    <p class="service-description">Wedding invitation design, birthday invitation design, funeral program design, and event branding in Ghana.</p>
+                    <p class="service-price">GH₵150 – GH₵400</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    </div>
+                    <h3 class="service-title">Brand Identity & Packaging</h3>
+                    <p class="service-description">Complete brand identity design, product packaging design, label design, T-shirt design, and vehicle branding in Ghana.</p>
+                    <p class="service-price">GH₵150 – GH₵3,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
                 </div>
             </div>
-            <div class="portfolio-item" data-category="Graphics" data-title="Event Flyer" data-description="Vibrant event flyer designed to attract attention and convey key information.">
-                <img src="images/eve.jfif" alt="Event Flyer">
-                <div class="overlay">
-                    <h3>Event Flyer</h3>
-                    <p>Graphics</p>
+
+            <!-- Web Development Services -->
+            <h4 class="services-subcategory fade-in">Website Design & Development in Ghana</h4>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3 class="service-title">Corporate & Business Website</h3>
+                    <p class="service-description">Professional corporate website design, business website development, company website design, and responsive web design in Ghana.</p>
+                    <p class="service-price">GH₵2,500 – GH₵5,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
                 </div>
-            </div>
-            <div class="portfolio-item" data-category="Branding" data-title="Brand Identity" data-description="Complete brand identity package with logo, typography, and stationery design.">
-                <img src="images/bra.jfif" alt="Brand Identity">
-                <div class="overlay">
-                    <h3>Brand Identity</h3>
-                    <p>Branding</p>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                    <h3 class="service-title">E-Commerce Website Design</h3>
+                    <p class="service-description">Online store design, e-commerce website development, WooCommerce website design, and online payment integration in Ghana.</p>
+                    <p class="service-price">GH₵3,500 – GH₵8,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
                 </div>
-            </div>
-            <div class="portfolio-item" data-category="Websites" data-title="E-commerce Platform" data-description="A fully functional e-commerce website optimized for sales and user experience.">
-                <img src="images/ecom.jfif" alt="E-commerce Platform">
-                <div class="overlay">
-                    <h3>E-commerce Platform</h3>
-                    <p>Websites</p>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3 class="service-title">School & Education Website</h3>
+                    <p class="service-description">School website design, e-learning platform development, student portal design, and school management systems in Ghana.</p>
+                    <p class="service-price">GH₵2,000 – GH₵4,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
                 </div>
-            </div>
-            <div class="portfolio-item" data-category="Graphics" data-title="Logo Design" data-description="A unique logo crafted to reflect the brand's identity and values.">
-                <img src="images/log.png" alt="Logo Design">
-                <div class="overlay">
-                    <h3>Logo Design</h3>
-                    <p>Graphics</p>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3 class="service-title">Hotel & Hospitality Website</h3>
+                    <p class="service-description">Hotel booking website design, restaurant website design, resort website design, and hospitality website development in Ghana.</p>
+                    <p class="service-price">GH₵2,000 – GH₵6,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
                 </div>
-            </div>
-            <div class="portfolio-item" data-category="Branding" data-title="Stationery Design" data-description="Elegant stationery design to enhance brand professionalism.">
-                <img src="images/stat.jfif" alt="Stationery Design">
-                <div class="overlay">
-                    <h3>Stationery Design</h3>
-                    <p>Branding</p>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <h3 class="service-title">Hospital & Clinic Website</h3>
+                    <p class="service-description">Hospital website design, clinic website design, pharmacy website design, and medical practice website design in Ghana.</p>
+                    <p class="service-price">GH₵2,500 – GH₵5,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
                 </div>
-            </div>
-        </div>
-        <div class="modal" id="portfolioModal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <img id="modalImage" src="" alt="Portfolio Item">
-                <h3 id="modalTitle"></h3>
-                <p id="modalCategory"></p>
-                <p id="modalDescription"></p>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <h3 class="service-title">Church & Religious Website</h3>
+                    <p class="service-description">Church website design, mosque website design, ministry website design, and donation website design in Ghana.</p>
+                    <p class="service-price">GH₵1,500 – GH₵3,500</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                    </div>
+                    <h3 class="service-title">Real Estate & Property Website</h3>
+                    <p class="service-description">Real estate website design, property listing website design, and property management website development in Ghana.</p>
+                    <p class="service-price">GH₵3,000 – GH₵6,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 class="service-title">SEO & Website Maintenance</h3>
+                    <p class="service-description">SEO services Ghana, search engine optimization, website speed optimization, website maintenance, and domain and hosting setup.</p>
+                    <p class="service-price">GH₵200 – GH₵2,000</p>
+                    <a href="contact.html" class="service-order-link">Get a Quote</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <script>
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-        const modal = document.getElementById('portfolioModal');
-        const modalImage = document.getElementById('modalImage');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalCategory = document.getElementById('modalCategory');
-        const modalDescription = document.getElementById('modalDescription');
-        const closeButton = document.querySelector('.close-button');
-
-        portfolioItems.forEach(item => {
-            item.addEventListener('click', () => {
-                modalImage.src = item.querySelector('img').src;
-                modalTitle.textContent = item.dataset.title;
-                modalCategory.textContent = `Category: ${item.dataset.category}`;
-                modalDescription.textContent = item.dataset.description;
-                modal.style.display = 'flex';
-            });
-        });
-
-        closeButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    </script>
-
-     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .packages-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 3rem 2rem;
-            background: #FFFFFF;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .packages-section h2 {
-            text-align: center;
-            color: #1556CE;
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .packages-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: #1556CE;
-        }
-
-        .packages-section p.note {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #333;
-            margin-bottom: 2rem;
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 1rem;
-        }
-
-        .package-card {
-            background: #FFFFFF;
-            border: 2px solid #1556CE;
-            border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .package-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        .package-card h3 {
-            color: #1556CE;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .package-card .price {
-            font-size: 2rem;
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-        }
-
-        .package-card ul {
-            list-style: none;
-            margin-bottom: 1.5rem;
-        }
-
-        .package-card ul li {
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 0.8rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .package-card ul li::before {
-            content: '✔';
-            color: #1556CE;
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-
-        .package-card .cta-button {
-            display: inline-block;
-            background: #1556CE;
-            color: #FFFFFF;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-
-        .package-card .cta-button:hover {
-            background: #1556CE;
-            transform: scale(1.05);
-        }
-
-        .graphic-effects {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .graphic-icon {
-            position: absolute;
-            opacity: 0.15;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .graphic-icon img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
-            50% { opacity: 0.25; }
-            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .packages-section {
-                padding: 2rem 1rem;
-            }
-
-            .packages-section h2 {
-                font-size: 2.2rem;
-            }
-
-            .package-card {
-                padding: 1.5rem;
-            }
-
-            .package-card h3 {
-                font-size: 1.5rem;
-            }
-
-            .package-card .price {
-                font-size: 1.8rem;
-            }
-
-            .package-card ul li {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-
-    
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .testimonials-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 3rem 2rem;
-            background: #FFFFFF;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonials-section h2 {
-            text-align: center;
-            color: #1556CE;
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
-            position: relative;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .testimonials-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: #1556CE;
-        }
-
-        .carousel {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .testimonial {
-            flex: 0 0 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            background: #FFFFFF;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            animation: fadeInSlide 0.5s ease-in-out;
-            min-height: 300px;
-        }
-
-        .testimonial img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 3px solid #1556CE;
-        }
-
-        .testimonial p {
-            font-size: 1.1rem;
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            max-width: 600px;
-        }
-
-        .testimonial h4 {
-            font-size: 1.2rem;
-            color: #1556CE;
-            font-weight: bold;
-        }
-
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .carousel-button {
-            background: #1556CE;
-            color: #FFFFFF;
-            border: none;
-            padding: 0.5rem 1rem;
-            font-size: 1.5rem;
-            cursor: pointer;
-            border-radius: 50%;
-            transition: background 0.3s ease;
-        }
-
-        .carousel-button:hover {
-            background: #1556CE;
-        }
-
-        .carousel-dots {
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        .dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: #ccc;
-            border-radius: 50%;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .dot.active {
-            background: #1556CE;
-        }
-
-        .graphic-effects {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .graphic-icon {
-            position: absolute;
-            opacity: 0.15;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .graphic-icon img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
-            50% { opacity: 0.25; }
-            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInSlide {
-            0% { opacity: 0; transform: translateX(20px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .testimonials-section {
-                padding: 2rem 1rem;
-            }
-
-            .testimonials-section h2 {
-                font-size: 2.2rem;
-            }
-
-            .testimonial {
-                padding: 1.5rem;
-            }
-
-            .testimonial p {
-                font-size: 1rem;
-            }
-
-            .testimonial img {
-                width: 80px;
-                height: 80px;
-            }
-
-            .carousel-button {
-                padding: 0.4rem 0.8rem;
-                font-size: 1.2rem;
-            }
-        }
-    </style>
-   
-    <script>
-        const carouselInner = document.querySelector('.carousel-inner');
-        const testimonials = document.querySelectorAll('.testimonial');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
-        const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % testimonials.length;
-            updateCarousel();
-        });
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-            updateCarousel();
-        });
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                updateCarousel();
-            });
-        });
-
-        // Auto-slide every 5 seconds
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % testimonials.length;
-            updateCarousel();
-        }, 5000);
-    </script>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .contact-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 3rem 2rem;
-            background: #FFFFFF;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-section h2 {
-            text-align: center;
-            color: #1556CE;
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
-            position: relative;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .contact-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: #1556CE;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            padding: 1rem;
-        }
-
-        .contact-form, .contact-info {
-            padding: 2rem;
-            background: #FFFFFF;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .contact-form h3, .contact-info h3 {
-            color: #1556CE;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-form label {
-            display: block;
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-form input, .contact-form select, .contact-form textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border: 1px solid #1556CE;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
-            border-color: #1556CE;
-            outline: none;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .contact-form button {
-            background: #1556CE;
-            color: #FFFFFF;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background: #1556CE;
-            transform: scale(1.05);
-        }
-
-        .contact-info p {
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info a {
-            color: #1556CE;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: #1556CE;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            font-size: 1.5rem;
-        }
-
-        .map-container {
-            margin-top: 2rem;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-        }
-
-        .graphic-effects {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .graphic-icon {
-            position: absolute;
-            opacity: 0.15;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .graphic-icon img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
-            50% { opacity: 0.25; }
-            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media screen and (max-width: 768px) {
-            .contact-section {
-                padding: 2rem 1rem;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-section h2 {
-                font-size: 2.2rem;
-            }
-
-            .contact-form, .contact-info {
-                padding: 1.5rem;
-            }
-
-            .contact-form h3, .contact-info h3 {
-                font-size: 1.5rem;
-            }
-
-            .map-container iframe {
-                height: 250px;
-            }
-        }
-    </style>
-
-    <section class="contact-section" id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-grid">
-            <div class="contact-form">
-                <h3>Enquiry Form</h3>
-
-<form action="https://formsubmit.co/rashlyngraphics@gmail.com" method="POST">
-    <!-- Client's Name -->
-    <input type="text" name="name" placeholder="Your Name" required>
-
-    <!-- Client's Email -->
-    <input type="email" name="email" placeholder="Your Email" required>
-
-    <!-- Client's Contact (Phone Number) -->
-    <input type="tel" name="contact" placeholder="Your Contact Number" required>
-
-    <!-- Client's Message -->
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-    <!-- Submit Button -->
-    <button type="submit">Send</button>
-</form>
-
+    <!-- Packages Preview -->
+    <section class="packages-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Website Packages</p>
+                <h2 class="section-title">Affordable website design plans for <span class="accent-text">every business in Ghana</span></h2>
+                <p class="section-subtitle">From affordable starter plans for small businesses to premium e-commerce packages for large enterprises. Website design prices in Ghana that fit your budget.</p>
             </div>
-            <div class="contact-info">
-                <h3>Contact Details</h3>
-                <p><strong>Phone:</strong> <a href="tel:+233547642937">+233547642937</a></p>
-                <p><strong>Email:</strong> <a href="rashlyngraphic.vercel.app">rashlyngraphics@gmail.com</a></p>
-                <p><strong>Address:</strong> Ritz Junction Madina, Ghana</p>
-                <div class="social-links">
-                    <a href="https://facebook.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/facebook.png" alt="Facebook"></a>
-                    <a href="https://twitter.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/twitter.png" alt="Twitter"></a>
-                    <a href="https://instagram.com/rashlyngraphics" target="_blank"><img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram"></a>
-                </div>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.997423291849!2d-0.200103685231494!3d5.603716796021881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzYnMTMuNCJOIDDCsDEyJzAwLjQiVw!5e0!3m2!1sen!2sgh!4v1634567890123" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="graphic-effects">
-            <div class="graphic-icon" style="left: 5%; bottom: 10%; animation-delay: 0s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
-            </div>
-            <div class="graphic-icon" style="right: 10%; bottom: 20%; animation-delay: 2s;">
-                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
-            </div>
-            <div class="graphic-icon" style="left: 15%; bottom: 30%; animation-delay: 4s;">
-                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
+            <div class="overview-cta fade-in">
+                <a href="packages.html" class="btn btn-primary">View All Packages</a>
             </div>
         </div>
     </section>
-     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
 
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #1556CE;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            z-index: 1000;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .whatsapp-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        }
-
-        .whatsapp-button img {
-            width: 30px;
-            height: 30px;
-        }
-
-        @media screen and (max-width: 768px) {
-            .whatsapp-button {
-                width: 50px;
-                height: 50px;
-            }
-
-            .whatsapp-button img {
-                width: 25px;
-                height: 25px;
-            }
-        }
-    </style>
-
-     <a href="https://wa.me/+233547642937?text=Hello%20Rashlyn%20Graphics,%20how%20much%20do%20you%20charge%20for%20a%20service?" target="_blank" class="whatsapp-button">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon">
-    </a>
-
-     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .footer-section {
-            background: #1556CE;
-            color: #FFFFFF;
-            padding: 3rem 2rem;
-            position: relative;
-        }
-
-        .footer-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-
-        .footer-column {
-            padding: 1rem;
-        }
-
-        .footer-column h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #FFFFFF;
-        }
-
-        .footer-column p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #f0f0f0;
-        }
-
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 0.8rem;
-        }
-
-        .footer-column ul li a {
-            color: #f0f0f0;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-column ul li a:hover {
-            color: #FFFFFF;
-            text-decoration: underline;
-        }
-
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: #FFFFFF;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: #FFFFFF;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #f0f0f0;
-        }
-
-        .social-links img {
-            width: 24px;
-            height: 24px;
-        }
-
-        .footer-bottom {
-            background: #1556CE;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        .footer-bottom p {
-            font-size: 0.9rem;
-            color: #FFFFFF;
-        }
-
-        .graphic-effects {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .graphic-icon {
-            position: absolute;
-            opacity: 0.15;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .graphic-icon img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(100%) rotate(0deg); opacity: 0.1; }
-            50% { opacity: 0.25; }
-            100% { transform: translateY(-100%) rotate(360deg); opacity: 0; }
-        }
-
-        @media screen and (max-width: 768px) {
-            .footer-section {
-                padding: 2rem 1rem;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-column h3 {
-                font-size: 1.3rem;
-            }
-
-            .footer-column p, .footer-column ul li a {
-                font-size: 0.9rem;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-
-            .footer-logo {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-
-     <footer class="footer-section">
-        <div class="footer-grid">
-            <div class="footer-column">
-                <div class="footer-logo">Rashlyn Graphics</div>
-                <p>Rashlyn Graphics & ICT Solutions provides top-tier website design, graphic design, branding, and ICT training. We turn your vision into reality with creativity and expertise.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-              
-            </div>
-            <div class="footer-column">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#website-design">Website Design</a></li>
-                    <li><a href="#graphic-design">Graphic Design</a></li>
-                    <li><a href="#branding">Branding</a></li>
-                  
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contact Info</h3>
-                <p>Phone: <a href="tel:+233123456789">+233547642937</a></p>
-                <p>Email: <a href="rashlyngraphic.vercel.com">rashlyngraphics@gmail.com</a></p>
-                <p>Address: Sunbird Street GD-013-5058, Accra, Ghana</p>
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2 class="section-title">Ready to start your <span class="accent-text">project</span>?</h2>
+                <p class="section-subtitle">Contact Rashlyn Graphics & ICT Solutions today for professional graphic design, affordable website design, logo design, brand identity design, and ICT training in Accra, Ghana.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+                    <a href="about.html" class="btn btn-outline">About Us</a>
+                </div>
             </div>
         </div>
-        <div class="graphic-effects">
-            <div class="graphic-icon" style="left: 5%; bottom: 10%; animation-delay: 0s;">
-                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" alt="Photoshop Icon">
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="Rashlyn Graphics - Graphic Design and Website Design Company in Ghana" class="logo-img"></a>
+                    <p>Rashlyn Graphics & ICT Solutions is a professional graphic design, website design, and ICT training company in Accra, Ghana. We provide affordable logo design, flyer design, business card design, responsive website design, e-commerce website development, school website design, school management systems, school visibility solutions, school branding, school marketing, hotel website design, church website design, brand identity design, and digital marketing services to businesses, schools, hotels, churches, and organizations across Ghana.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+233547642937">0547 642 937</a></li>
+                        <li><a href="mailto:rashlyngraphics@gmail.com">rashlyngraphics@gmail.com</a></li>
+                        <li><a href="#">Ritz Junction Madina, Accra, Ghana</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="graphic-icon" style="right: 10%; bottom: 20%; animation-delay: 2s;">
-                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon">
+            <div class="footer-bottom">
+                <p>&copy; 2013-2026 Rashlyn Graphics & ICT Solutions. Professional Graphic Design, Website Design, School Management Solutions & ICT Training in Ghana. All rights reserved.</p>
             </div>
-            <div class="graphic-icon" style="left: 15%; bottom: 30%; animation-delay: 4s;">
-                <img src="https://img.icons8.com/color/48/000000/color-wheel.png" alt="Color Palette Icon">
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2013-2025 Rashlyn Graphics & ICT Solutions. All rights reserved. Designed & Developed By rashlyngraphics</p>
         </div>
     </footer>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/233547642937?text=Hello%20Rashlyn%20Graphics!%20I'm%20interested%20in%20your%20graphic%20design%2C%20website%20design%2C%20and%20school%20management%20solutions." class="whatsapp-float" id="whatsappBtn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
+    <script src="js/main.js" defer></script>
 </body>
-
 </html>
-
-
-
-
