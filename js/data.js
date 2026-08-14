@@ -6,7 +6,7 @@ const RWG = {
     whatsapp: "233547642937",
     phoneDisplay: "+233 54 764 2937",
     phoneRaw: "+233547642937",
-    email: "hello@rashlynsolutions.com",
+    email: "seidu99245@gmail.com",
     location: "Accra, Ghana",
     socials: [
       { name: "Facebook", url: "https://facebook.com/rashlynsolutions" },
@@ -18,20 +18,20 @@ const RWG = {
 
   profile: {
     name: "Rashid Seidu",
-    intro: "I am a graphic designer, web solutions developer and IT trainer who helps schools and businesses perform difficult tasks easily to boost productivity.",
+    intro: "I am Web, Graphic and I.T solutions provider for schools and businesses. I will you perform difficult tasks easily to help your business grow.",
     paragraphs: [
-      "I do not sell websites, graphics and training as separate services. I look at the problem your school or business is facing and I build the right solution for it, so you save time, impress your customers and stop losing work to small daily mistakes.",
-      "Whether you run a school that needs parents to find information easily, or a business that keeps losing orders in WhatsApp chats, there is a simple solution. I build it, and I train you to run it yourself."
+      "I don't just develop Websites, Brand your business and Train staffs as a service. I solve the problem your school or business is facing by building you the right solution, so you save time, money, impress your customers and stop losing clients to small daily mistakes.",
+      "Whether you run a school that needs parents to find information easily, or a business that keeps losing orders in WhatsApp chats, there is a simple solution. I'll build it, and I train you to run it yourself."
     ],
     points: [
-      "Graphic design that makes your school or business look organised and trustworthy.",
-      "Websites and catalogues that make it easy for customers and parents to reach you.",
-      "Practical IT training that helps you and your staff use technology well."
+      "Branding that makes your business position itself as an organised and trustworthy space for clients.",
+      "You will be well positioned so it becomes easy for clients to reach you.",
+      "Your team will have practical I.T trainings to boost sales and customer relations."
     ]
   },
 
   schoolProblems: [
-    "Parents cannot find admission requirements or information about your school.",
+    "Parents cannot find your school online.",
     "The school office spends hours answering the same questions from parents.",
     "Student and fee records are kept in paper files, so reports take days.",
     "Notices, results and event updates reach parents slowly or not at all.",
