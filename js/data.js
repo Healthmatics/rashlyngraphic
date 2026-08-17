@@ -20,7 +20,7 @@ const RWG = {
     name: "Rashid Seidu",
     intro: "I am Web, Graphic and I.T solutions provider for schools and businesses. I will help you perform difficult tasks easily to help your business grow.",
     paragraphs: [
-      "I don't just develop Websites, Brand your business and Train staffs as a service. I solve the problem your school or business is facing by building you the right solution, so you save time, money, impress your customers and stop losing clients to small daily mistakes.",
+      "I don't just develop Websites, Brand your business and Train staffs as a service. I solve the problem your business is facing by building you the right solution, so you save time, money, impress your customers and stop losing clients to small daily mistakes.",
       "Whether you run a school that needs parents to find information easily, or a business that keeps losing orders in WhatsApp chats, there is a simple solution. I'll build it, and I train you to run it yourself."
     ],
     points: [
@@ -53,13 +53,13 @@ const RWG = {
   ],
 
   proposal: {
-    title: "Talk to Me About Your Problems",
-    text: "Not sure which problem to fix first? Tell me about the challenges your school or business is facing, and I will send you a free proposal on how to solve them.",
-    cta: "Get My Free Proposal"
+    title: "Share Your Problems With Me",
+    text: "Get A Free Business Assessment & Improvement Proposal? Tell me about the challenges your business is facing, and I will send you a free proposal on how to solve them.",
+    cta: "Get Free Proposal"
   },
 
   contact: {
-    serviceOptions: ["Graphic Design", "Web Solutions", "IT Training", "School Website", "Product Catalogue / Mini Store", "Other / Not Sure"],
+    serviceOptions: ["Graphic Designing", "Web Development", "I.T Training", "Office Automation", "Technology Integrations", "Staff Training"],
     audienceOptions: ["A School", "A Business Selling Products", "Other"]
   }
 };
