@@ -18,7 +18,7 @@ const RWG = {
 
   profile: {
     name: "Rashid Seidu",
-    intro: "I am Web, Graphic and I.T solutions provider for schools and businesses. I will you perform difficult tasks easily to help your business grow.",
+    intro: "I am Web, Graphic and I.T solutions provider for schools and businesses. I will help you perform difficult tasks easily to help your business grow.",
     paragraphs: [
       "I don't just develop Websites, Brand your business and Train staffs as a service. I solve the problem your school or business is facing by building you the right solution, so you save time, money, impress your customers and stop losing clients to small daily mistakes.",
       "Whether you run a school that needs parents to find information easily, or a business that keeps losing orders in WhatsApp chats, there is a simple solution. I'll build it, and I train you to run it yourself."
